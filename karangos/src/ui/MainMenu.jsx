@@ -66,6 +66,22 @@ export default function MainMenu() {
           Cadastro de clientes
         </MenuItem>
 
+        <MenuItem 
+          onClick={handleClose}
+          component={Link}
+          to="/cars"
+        >
+          Listagem de veículos
+        </MenuItem>
+
+        <MenuItem 
+          onClick={handleClose}
+          component={Link}
+          to="/cars/new"
+        >
+          Cadastro de veículos
+        </MenuItem>
+
       </Menu>
     </div>
   );
