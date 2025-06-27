@@ -8,6 +8,8 @@ import CustomersForm from '../pages/customers/CustomersForm'
 import CarsList from '../pages/cars/CarsList'
 import CarsForm from '../pages/cars/CarsForm'
 
+import Componente from '../pages/Componente.jsx'
+
 export default function AppRoutes() {
   return <Routes>
     <Route path="/" element={ <Homepage /> } />
@@ -19,5 +21,7 @@ export default function AppRoutes() {
     <Route path="/cars" element={ <CarsList /> } />
     <Route path="/cars/new" element={ <CarsForm /> } />
     <Route path="/cars/:id" element={ <CarsForm /> } />
+
+    <Route path="/componente" element={ <Componente /> } />
   </Routes>
 }

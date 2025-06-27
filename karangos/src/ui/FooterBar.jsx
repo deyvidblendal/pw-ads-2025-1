@@ -11,21 +11,22 @@ export default function FooterBar() {
         backgroundColor: 'action.disabledBackground',
         display: 'flex',
         justifyContent: 'center',
-        position: 'fixed',  // posição fixa
-        bottom: 0,          // na parte de baixo da página
-        width: '100vw'      // 100% da largura da viewport
+        position: 'fixed',
+        bottom: 0,
+        width: '100vw'
       }}
     >
       <Typography 
         variant="caption" 
         gutterBottom
         sx={{
-          '& a': {  // Altera a cor do link (a) dentro do Typography
+          py: '12px', 
+          '& a': {
             color: 'secondary.light'
           }
         }}
       >
-        Desenvolvido e mantido com <LocalCafeIcon fontSize="small" /> por <a href="mailto:professor@faustocintra.com.br">Prof. Fausto Cintra</a>
+      Desenvolvido por <a href="deyvidrosa@fatec.sp.gov.br">[Deyvid Blendal Conrado Rosa]</a> <LocalCafeIcon fontSize="small" />
       </Typography>
     </Box>
   );
